@@ -1,7 +1,7 @@
 - name: Install apache on centos
   hosts: centos
   vars:
-    ansible_password: Nw2023xla!
+    ansible_password: password
 
   tasks:
     - name: install apache web server
@@ -14,7 +14,7 @@
 - name: Install apache on ubuntu
   hosts: ubuntu  
   vars:
-    ansible_password: Nw2023xla!
+    ansible_password: password
   tasks:
     - name: install apache web server
       apt: name=apache2 state=present
